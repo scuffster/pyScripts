@@ -1,0 +1,10 @@
+Could not open configfile /usr/etc/vgrabbj.conf, ignoring
+Reading image from /dev/video0
+cat is in da house! 
+grab 1...
+Catz Out 
+lights off
+Traceback (most recent call last):
+  File "switchDetect.py", line 24, in <module>
+    if input_value == False:
+KeyboardInterrupt

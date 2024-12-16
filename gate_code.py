@@ -53,7 +53,8 @@ def publish_log(message):
 
 # OTA Update Functionality
 def check_and_update_firmware():
-    print("Checking for updates...")
+    print()
+    publish_log(time.time()+"-> Checking for updates...")
     try:
         pool = socketpool.SocketPool(wifi.radio)
         ssl_context = ssl.create_default_context()

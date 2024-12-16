@@ -17,7 +17,7 @@ AIO_USERNAME = secrets["aio_username"]
 AIO_KEY = secrets["aio_key"]
 
 # OTA URL to fetch updated code
-FIRMWARE_URL = "https://raw.githubusercontent.com/scuffster/pyScripts/master/gate_code.py"  # Direct raw file URL
+FIRMWARE_URL = "https://raw.githubusercontent.com/scuffster/pyScripts/refs/heads/master/gate_code.py"  # Direct raw file URL
 
 # Connect to Wi-Fi
 def connect_wifi():

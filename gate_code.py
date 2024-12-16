@@ -53,8 +53,7 @@ def publish_log(message):
 
 # OTA Update Functionality
 def check_and_update_firmware():
-    print()
-    publish_log(time.time()+"-> Checking for updates...")
+    print("Checking for updates...")
     try:
         pool = socketpool.SocketPool(wifi.radio)
         ssl_context = ssl.create_default_context()
@@ -123,10 +122,9 @@ try:
     while True:
         try:
             mqtt_client.loop(timeout=20)
-            time.sleep(2)
+            time.sleep(0.5)
         except Exception as e:
             publish_log(f"Error in loop: {e}")
 
 except Exception as e:
-    print(f"Startup Error: {e}")
     publish_log(f"Startup Error: {e}")
